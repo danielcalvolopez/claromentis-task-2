@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Overpass";
+  margin: 2rem;
+  font-size: 15px;
+  background-color: var(--VeryDarkBlue);
+  min-height: 100vh;
+
+  --LightGray: hsl(217, 12%, 63%);
+  --MediumGray: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 20%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+}
+
+.rating-container,
+.thankyou-container {
+  background-color: var(--DarkBlue);
+  border-radius: 30px;
+  padding: 3rem;
+  max-width: 40rem;
+}
+
+.rating-container img {
+  background-color: hsl(214, 12%, 23%);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.rating-container h1 {
+  margin: 1.5rem 0 1rem;
+  color: white;
+}
+
+.rating-container p {
+  color: var(--LightGray);
+  margin-bottom: 1rem;
+}
+
+.rating-container .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.rating-container .buttons button {
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  color: var(--LightGray);
+  background-color: hsl(214, 12%, 23%);
+}
+
+.rating-container .buttons button:hover {
+  background-color: var(--Orange);
+  color: white;
+}
+
+.rating-container .buttons button:active {
+  background-color: var(--LightGray);
+  color: white;
+}
+
+.rating-container .button-submit {
+  background-color: var(--Orange);
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.rating-container .button-submit:hover {
+  background-color: white;
+  color: var(--Orange);
+}
+
+.thankyou-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thankyou-container img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.thankyou-container .rate-selected {
+  border-radius: 30px;
+  padding: 0.01rem 0.7rem 0;
+  background-color: hsl(214, 12%, 23%);
+  color: var(--Orange);
+  margin-bottom: 2rem;
+}
+
+.thankyou-container h2 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.thankyou-container p {
+  margin-bottom: 1rem;
+  color: var(--LightGray);
+  text-align: center;
+}
+
+p {
+  line-height: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+}
+
+@media only screen and (max-width: 1440px) {
+}
