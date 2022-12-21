@@ -4,11 +4,11 @@ const thankyouContainer = document.querySelector(".thankyou-container");
 const rating = document.getElementById("rating");
 
 const ratings = [
-  { number: "1", id: "1" },
-  { number: "2", id: "2" },
-  { number: "3", id: "3" },
-  { number: "4", id: "4" },
-  { number: "5", id: "5" },
+  { number: "1" },
+  { number: "2" },
+  { number: "3" },
+  { number: "4" },
+  { number: "5" },
 ];
 
 const btnsContent = document.querySelector(".btns-content");
