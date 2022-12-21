@@ -1,11 +1,7 @@
-const ratingContainer = document.querySelector(".rating-container");
-
-const thankyouContainer = document.querySelector(".thankyou-container");
-
 const submitButton = document.getElementById("submit");
-
+const ratingContainer = document.querySelector(".rating-container");
+const thankyouContainer = document.querySelector(".thankyou-container");
 const rating = document.getElementById("rating");
-
 const rates = document.querySelectorAll(".button-rating");
 
 submitButton.addEventListener("click", () => {
