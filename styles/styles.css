@@ -18,6 +18,7 @@ body {
 
   --LightGray: hsl(217, 12%, 63%);
   --MediumGray: hsl(216, 12%, 54%);
+  --LightBlue: hsl(214, 12%, 23%);
   --DarkBlue: hsl(213, 20%, 18%);
   --VeryDarkBlue: hsl(216, 12%, 8%);
   --Orange: hsl(25, 97%, 53%);
@@ -27,12 +28,12 @@ body {
 .thankyou-container {
   background-color: var(--DarkBlue);
   border-radius: 30px;
-  padding: 3rem;
-  max-width: 40rem;
+  padding: 2.5rem;
+  max-width: 20rem;
 }
 
 .rating-container img {
-  background-color: hsl(214, 12%, 23%);
+  background-color: var(--LightBlue);
   border-radius: 50%;
   padding: 0.5rem;
 }
@@ -44,7 +45,7 @@ body {
 
 .rating-container p {
   color: var(--LightGray);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .rating-container .buttons {
@@ -62,7 +63,9 @@ body {
   border: none;
   border-radius: 50%;
   color: var(--LightGray);
-  background-color: hsl(214, 12%, 23%);
+  background-color: var(--LightBlue);
+  outline: none;
+  border: none;
 }
 
 .rating-container .buttons button:hover {
@@ -70,7 +73,7 @@ body {
   color: white;
 }
 
-.rating-container .buttons button:active {
+.rating-container .buttons button:focus {
   background-color: var(--LightGray);
   color: white;
 }
@@ -108,8 +111,8 @@ body {
 
 .thankyou-container .rate-selected {
   border-radius: 30px;
-  padding: 0.01rem 0.7rem 0;
-  background-color: hsl(214, 12%, 23%);
+  padding: 0.3rem 1rem;
+  background-color: var(--LightBlue);
   color: var(--Orange);
   margin-bottom: 2rem;
 }
@@ -120,21 +123,18 @@ body {
 }
 
 .thankyou-container p {
-  margin-bottom: 1rem;
   color: var(--LightGray);
   text-align: center;
 }
 
 p {
-  line-height: 2;
+  line-height: 1.7;
 }
 
 .hidden {
   display: none;
 }
 
-@media only screen and (max-width: 375px) {
-}
-
-@media only screen and (max-width: 1440px) {
+button {
+  list-style-type: none;
 }
